@@ -12,22 +12,3 @@ This project tests whether two event-contract structures with identical settleme
 - Apparent arbitrage is not scalable: although the full panel contains 862 gross candidate state-minutes, the pre-close non-direct fee-positive screen yields only five episodes, worth approximately $0.10 in aggregate at one-lot size.
 
 The central conclusion is negative but economically important: redundant contracts provide useful market-quality and price-discovery signals, but the data do not support a deployable arbitrage strategy.
-
-## Repository
-
-- `paper/` — final paper, source and bibliography
-- `src/` and `scripts/` — collection, matching and analysis code
-- `results/` — publication figures, aggregate tables and results manifest
-- `tests/` — 12 unit tests covering payoff identities, quote algebra, fees and surface coherence
-
-## Reproduce
-
-Requires Python 3.11+ and the dependencies in `pyproject.toml`.
-
-```bash
-python scripts/collect.py
-python scripts/analyze.py
-python -m unittest discover -s tests -v
-```
-
-Raw API data, row-level observations and credentials are not distributed. Historical candles contain minute-level closing top-of-book quotes rather than order-book depth or atomic executions; quoted-lock candidates should therefore not be interpreted as realised trades. See [`DISTRIBUTION_NOTICE.md`](DISTRIBUTION_NOTICE.md) before reproducing or publishing the analysis.
