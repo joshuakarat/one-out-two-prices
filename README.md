@@ -2,8 +2,6 @@
 
 **Rule-Verified No-Arbitrage and Price Discovery in Event-Contract Probability Surfaces**
 
-[Read the paper](paper/output/Joshua_Karat_One_Outcome_Two_Prices_v3.2.0.pdf) · [View the project page](index.html) · [Explore the results](results/results_manifest.json)
-
 This project tests whether two event-contract structures with identical settlement payoffs are priced consistently. Direct range contracts are matched to portfolios of adjacent threshold contracts on the same S&P 500 and Nasdaq-100 settlement values, creating a model-free, within-exchange test of price coherence and price discovery.
 
 ## Key findings
